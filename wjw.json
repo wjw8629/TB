@@ -1,6 +1,6 @@
 {
 "spider": "./jar/fanty.jar;md5;f4ec316a5fa752ef8082328b9b28e708",
-"lives":[{"name":"live","type":0,"url":"https://xhdwc.tk/tvlive.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}],
+"lives":[{"name":"live","type":0,"url":"https://raw.githubusercontent.com/wjw8629/Plist/main/source.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}],
 "wallpaper":"https://jianbian.chuqiuyu.tk",
 "sites":[
 {"key":"drpy_js_豆瓣","name":"豆瓣搜索[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js","searchable":0,"quickSearch":0,"changeable":0},
