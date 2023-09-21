@@ -3,19 +3,34 @@ try {
     VOD={};
 	let html1 = request(input);
 	pdfh = jsp.pdfh;
-	VOD.vod_id = pdfh(html1, "#current_id&&value");
-	VOD.vod_name = pdfh(html1, "h2&&Text");
+	//VOD.vod_id = pdfh(html1, "#current_id&&value");
+	VOD.vod_id = input;
+VOD.vod_name = pdfh(html1, "h2&&Text");
 	// VOD.vod_pic = pdfh(html1, ".item-root&&img&&src");
 	VOD.vod_pic = pdfh(html1, ".item-root&&img&&data-src");
-	VOD.vod_actor = pdfh(html1, ".celebrity&&Text");
-	VOD.vod_area = pdfh(html1, ".country&&Text");
-	VOD.vod_year = pdfh(html1, ".year&&Text");
+	// VOD.vod_actor = pdfh(html1, ".celebrity&&Text");
+	VOD.vod_actor = pdfh(html1, ".meta:eq(4)&&Text");
+	// VOD.vod_area = pdfh(html1, ".country&&Text");
+	VOD.vod_area = pdfh(html1, ".meta:eq(3)&&Text");
+	// VOD.vod_year = pdfh(html1, ".year&&Text");
+	VOD.vod_year = pdfh(html1, ".meta:eq(2)&&Text");
 	VOD.vod_remarks = "";
 	VOD.vod_director = "";
 	VOD.vod_content = "";
 	log(VOD);
-	input = "https://www.ikanbot.com/api/getResN?videoId=" + input.split("/").pop() + "&mtype=2";
-	let html = request(input);
+	var v_tks = '';
+	// let script = pdfa(html1,'script').find(it=>it.includes('v_tks+=')).replace(/<script>|<\\/script>/g,'');
+    // eval(script);
+	input = "https://www.ikanbot.com/api/getResN?videoId=" + input.split("/").pop() + "&mtype=2"+"&token="+v_tks;
+	// input = "https://www.ikanbot.com/api/getResN?videoId=" + input.split("/").pop() + "&mtype=2";
+	let html = request(input, {
+        headers: {
+			// 'User-Agent':'PC_UA',
+            // 'User-Agent':'MOBILE_UA',
+            'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+            'Referer': input,
+        }
+    });
 	print(html);
 	html = JSON.parse(html);
 	let episodes = html.data.list;
@@ -30,7 +45,7 @@ try {
 			if (!playMap.hasOwnProperty(source)) {
 				playMap[source] = []
 			}
-			playMap[source].push(playurl["url"])
+			playMap[source].push(playurl["url"].replaceAll('##','#'))
 		})
 	});
 	let playFrom = [];
@@ -54,7 +69,8 @@ var rule = {
     host:'https://www.ikanbot.com',
     url:'/hot/index-fyclass-fyfilter-p-fypage.html[/hot/index-fyclass-fyfilter.html]',
     //https://www.ikanbot.com/search?q=%E6%96%97%E7%BD%97%E5%A4%A7&p=2
-    searchUrl:'/search?q=**&p=fypage',
+    // searchUrl:'/search?q=**&p=fypage',
+	searchUrl:'/search?q=**',
     searchable:2,
     quickSearch:0,
     filterable:1,
@@ -86,7 +102,7 @@ var rule = {
     let data = {'tv': [{'key': 'tag', 'name': '标签', 'value': value}]};
     console.log(JSON.stringify(data));
     `,
-    headers:{'User-Agent':'MOBILE_UA',},
+    headers:{'User-Agent':'PC_UA',},
     class_name:'电影&剧集',
     class_url:'movie&tv',
 	play_parse:true,
@@ -95,5 +111,6 @@ var rule = {
     // 一级:'.v-list&&div.item;p&&Text;img&&src;;a&&href', //一级的内容是推荐或者点播时候的一级匹配
 	一级:'.v-list&&div.item;p&&Text;img&&data-src;;a&&href', //一级的内容是推荐或者点播时候的一级匹配
     二级:二级,
-    搜索:'#search-result&&.media;h5&&a&&Text;a&&img&&data-src;.label&&Text;a&&href',//第三个是描述，一般显示更新或者完结
+    // 搜索:'#search-result&&.media;h5&&a&&Text;a&&img&&data-src;.label&&Text;a&&href',//第三个是描述，一般显示更新或者完结
+	搜索:'.col-md-8&&.media;h5&&a&&Text;a&&img&&data-src;.label&&Text;a&&href',//第三个是描述，一般显示更新或者完结
 }
