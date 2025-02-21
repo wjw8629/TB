@@ -1,29 +1,28 @@
 {
-"spider":"./jar/fm.jar;md5;02a65fda9facfe6907d4b7583cd085ff",
+"spider":"./jar/pg.jar;md5;dffec63fb83a2b31b8606bd4bf6bead9",
 "lives":[{"name":"live","type":0,"url":"https://raw.githubusercontent.com/wjw8629/Plist/main/source.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"}],
 "sites":[
-{"key":"drpy_js_豆瓣","name":"豆瓣搜索[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js","searchable":0,"quickSearch":0,"changeable":0},
+{"key":"drpy_js_豆瓣","name":"搜索 | 豆瓣[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js","searchable":1,"quickSearch":0,"changeable":0},
 
-{"key":"drpy_js_爱壹帆[飞]","name":"起飞 | 爱壹帆[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/爱壹帆[飞].js"},
-{"key":"drpy_js_if101[飞]","name":"起飞 | if101[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/if101[飞].js"},
+
 {"key":"drpy_js_独播库[飞]","name":"起飞 | 独播库[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/独播库[飞].js"},
-{"key":"drpy_js_吼吼[飞]","name":"起飞 | 吼吼[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/吼吼[飞].js"},
-{"key":"drpy_js_唐人街影视[飞]","name":"起飞 | 唐人街影视[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/唐人街影视[飞].js"},
 {"key":"drpy_js_小宝影院[飞]","name":"起飞 | 小宝影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/小宝影院[飞].js"},
 
-{"key":"drpy_js_海兔影院","name":"影视 | 海兔影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/海兔影院.js"},
-{"key":"drpy_js_厂长资源","name":"影视 | 厂长资源[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/厂长资源.js"},
-{"key":"drpy_js_影探[V2]","name":"影视 | 影探[V2]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/影探[V2].js"},		
-{"key":"drpy_js_7喜影院","name":"影视 | 7喜影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/7喜影院.js"},
-{"key":"drpy_js_创艺影视[V2]","name":"影视 | 创艺影视[V2]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/创艺影视[V2].js"},
-{"key":"drpy_js_花猪影视[V2]","name":"影视 | 花猪影视[V2]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/花猪影视[V2].js"},
-{"key":"drpy_js_速看100[V2]","name":"影视 | 速看100[V2]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/速看100[V2].js"},
-{"key":"drpy_js_NY影院","name":"影视 | NY影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/NY影院.js"},
-{"key":"drpy_js_创艺影视","name":"影视 | 创艺影视[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/创艺影视.js"},
-{"key":"drpy_js_美视网","name":"影视 | 美视网[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/美视网.js"},
-{"key":"drpy_js_免费看","name":"影视 | 免费看[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/免费看.js"},
-{"key":"drpy_js_NT动漫","name":"动漫 | NT动漫[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/NT动漫.js"},
-{"key":"drpy_js_58动漫","name":"动漫 | 58动漫[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/58动漫.js"},
+{"key":"drpy_js_蛋蛋赞","name":"影视 | 蛋蛋赞[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/蛋蛋赞.js"},
+{"key":"drpy_js_多瑙影视","name":"影视 | 多瑙影视[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/多瑙影视.js"},
+
+{"key":"drpy_js_大师兄影视","name":"起飞 | 大师兄影视[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/大师兄影视.js"},
+{"key":"drpy_js_华乐影院","name":"起飞 | 华乐影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/华乐影院[飞].js"},
+{"key":"drpy_js_天天视频","name":"起飞 | 天天视频[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/天天视频[飞].js"},
+{"key":"drpy_js_起飞影院","name":"起飞 | 起飞影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/起飞影院.js"},
+{"key":"drpy_js_兰花影院","name":"起飞 | 兰花影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/兰花影院.js"},
+{"key":"drpy_js_胖虎","name":"起飞 | 胖虎[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/胖虎.js"},
+{"key":"drpy_js_555影视[飞]","name":"起飞 | 555影视[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/555影视[飞].js"},
+{"key":"drpy_js_if101[飞]","name":"起飞 | if101[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/if101[飞].js"},
+{"key":"drpy_js_KUBO影视[飞]","name":"起飞 | KUBO影视[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/KUBO影视[飞].js"},
+{"key":"drpy_js_爱壹帆[飞]","name":"起飞 | 爱壹帆[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/爱壹帆[飞].js"},
+{"key":"drpy_js_欧乐影院[飞]","name":"起飞 | 欧乐影院[js]","type":3,"api":"./lib/drpy2.min.js","ext":"./js/欧乐影院[飞].js"},
+
 
 {"key":"bb","name":"配置接口完全免费","type":3,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js"},
 {"key":"cc","name":"请勿相信视频中任何广告","type":3,"api":"./lib/drpy2.min.js","ext":"./js/drpy.js"}
