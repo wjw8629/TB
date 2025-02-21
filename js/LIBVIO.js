@@ -119,6 +119,9 @@ var next = html.link_next;
 var id = html.id;
 var nid = html.nid;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 2caab1fa (Merge branch 'gaotianliuyun:master' into master)
 if (/(www.aliyundrive.com|pan.quark.cn)/.test(url)){
 	let confirm = "";
 	if (TABS.length==1){
