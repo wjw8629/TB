@@ -17,12 +17,28 @@
       "name": "高天流云 FM"
     },
     {
+      "url": "./0828.json",
+      "name": "高天流云 TS"
+    },
+    {
       "url": "./js.json",
       "name": "高天流云 JS"
     },
     {
+      "url": "./XBPQ.json",
+      "name": "高天流云 XBPQ"
+    },
+    {
       "url": "./XYQ.json",
       "name": "高天流云 XYQ"
+    },
+    {
+      "url": "./cat.json",
+      "name": "高天流云 CAT"
+    },
+    {
+      "url": "./lf.json",
+      "name": "高天流云 LF"
     }
   ]
 }

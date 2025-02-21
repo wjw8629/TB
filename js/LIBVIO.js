@@ -101,15 +101,15 @@ var from = html.from;
 var next = html.link_next;
 var id = html.id;
 var nid = html.nid;
-if (/(aliyundrive.com|quark.cn|alipan.com)/.test(url)){
+if (/(www.aliyundrive.com|pan.quark.cn)/.test(url)){
 	let confirm = "";
 	if (TABS.length==1){
 		confirm="&confirm=0";
 	}
 	let type="ali";
-	if (url.includes("aliyundrive.com") || url.includes("alipan.com")){
+	if (url.includes("www.aliyundrive.com")){
 		type = "ali";
-	}else if (url.includes("quark.cn")){
+	}else if (url.includes("pan.quark.cn")){
 		type = "quark";
 	}
 	input = {
